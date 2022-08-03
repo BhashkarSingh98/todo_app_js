@@ -53,12 +53,20 @@ document.getElementById("add1").addEventListener("click", function () {
   subelem1.innerText = inputone;
   subelempara.innerText = inputone;
   closeicon.click();
-  var current_task = document.querySelectorAll("#delete");
-  for (var i = 0; i < current_task.length; i++) {
-    current_task[i].onclick = function () {
-      this.parentNode.remove();
-    };
-  }
+  // var current_task = document.querySelectorAll("#delete");
+  // for (var i = 0; i < current_task.length; i++) {
+  //   current_task[i].onclick = function () {
+  //     this.parentNode.remove();
+  //     //this.parentElement.remove();
+  //   };
+  // }
+
+  subelem6.addEventListener("click",
+  function(){
+    
+    outerelem.remove();
+  });
+
   var current_task2 = document.querySelectorAll("#plusicon2 i");
   for (var i = 0; i < current_task2.length; i++) {
     current_task2[i].onclick = function () {
@@ -98,7 +106,7 @@ document.getElementById("add1").addEventListener("click", function () {
     elem1.style.left="0%";
     elem12.style.height="320px"
     elem12.style.width="230px"
-    elem13.style.height="px"
+    //elem13.style.height=""
     elem13.style.overflow="visible"
     elem14.style.display="none"
     document.querySelector(".box1").style.visibility="visible";
@@ -134,6 +142,16 @@ document.getElementById("add2").addEventListener("click", function () {
   closeicon2.click();
 }
 });
+
+
+
+
+
+
+
+
+
+
 
 //  var grab1 = document.getElementById("noitem");
 // var ab = (document.querySelector("#add1").onclick = function () {
@@ -312,3 +330,4 @@ document.getElementById("add2").addEventListener("click", function () {
 //   e.style.color='red';
 
 //}
+//});

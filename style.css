@@ -63,24 +63,26 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-direction: row;
+  
   margin-bottom: 40px;
 }
 .outerelem{
-    height: 320px;
+  height: 320px;
   width: 230px;
   border: none;
-  
   margin-top: 20px;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
+ 
+ 
+ 
+
 }
 .trips {
   height: 320px;
   width: 230px;
   border: none;
   background-color: white;
-  margin-top: 20px;
   border-radius: 15px;
   margin-bottom: 20px;
 }
